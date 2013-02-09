@@ -200,6 +200,13 @@ namespace NVcdiff
 			{
 				return false;
 			}
+
+			// Check EOF marker (8th bit).
+			// For ability to read VCDIFF file from the middle of the stream.
+			if (windowIndicator==128)
+			{
+				return false;
+			}
 			
 			// The stream to load source data from for this window, if any
 			Stream sourceStream;
