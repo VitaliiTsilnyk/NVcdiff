@@ -1,0 +1,33 @@
+
+###### Editor files
+*~
+*.bak
+*.orig
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.usertasks
+*.resources
+*.vs10x
+*_ReSharper.*
+
+
+###### Binary files
+[Bb]in
+[Oo]bj
+*.cache
+*.sln.proj
+
+
+###### Custom NAnt configuration
+/build.conf
+
+
+###### Other files
+NVcdiff.snk
+
+
+###### OS generated files
+Thumbs.db
+.DS_Store*
