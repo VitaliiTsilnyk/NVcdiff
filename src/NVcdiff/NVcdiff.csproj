@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddressCache.cs" />
+    <Compile Include="Adler32.cs" />
     <Compile Include="CodeTable.cs" />
     <Compile Include="Instruction.cs" />
     <Compile Include="InstructionType.cs" />
