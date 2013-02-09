@@ -20,9 +20,8 @@ namespace NVcdiff
 				int read = stream.Read(ret, index, size-index);
 				if (read==0)
 				{
-					throw new EndOfStreamException
-						(String.Format("End of stream reached with {0} byte{1} left to read.", size-index,
-						size-index==1 ? "s" : ""));
+					// End of stream, just return current buffer
+					return ret;
 				}
 				index += read;
 			}
