@@ -1,7 +1,7 @@
 NVcdiff
 =======
 
-Copyright (c) 2012 Neris Ereptoris <http://neris.ws/>.
+Copyright (c) 2012 Vitalii Tsilnyk.  
 Copyright (c) 2004-2008 Jon Skeet and Marc Gravell.
 
 
