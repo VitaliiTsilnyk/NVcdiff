@@ -1,25 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyTitle>NVcdiff</AssemblyTitle>
     <Product>NVcdiff</Product>
-    <Copyright>Copyright © 2013 Neris Ereptoris (www.neris.ws), Copyright (c) 2004-2008 Jon Skeet and Marc Gravell.</Copyright>
+    <Description>Managed VCDIFF decoder for .NET</Description>
+    <Copyright>Copyright © 2013 Vitalii Tsilnyk, Copyright (c) 2004-2008 Jon Skeet and Marc Gravell.</Copyright>
     <Version>1.0.0</Version>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>vcdiff;diff</PackageTags>
+    <PackageProjectUrl>https://github.com/VitaliiTsilnyk/NVcdiff</PackageProjectUrl>
+    <PackageLicense>https://raw.githubusercontent.com/VitaliiTsilnyk/NVcdiff/master/LICENSE</PackageLicense>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/VitaliiTsilnyk/NVcdiff</RepositoryUrl>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugType>full</DebugType>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <OutputPath>bin\$(Configuration)\</OutputPath>
-    <DefineConstants />
-    <DocumentationFile>bin\$(Configuration)\NVcdiff.xml</DocumentationFile>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Strong)' == 'true' ">
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' AND Exists('$(MSBuildProjectDirectory)/../../NVcdiff.snk') ">
+    <AssemblyOriginatorKeyFile>../../NVcdiff.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\NVcdiff.snk</AssemblyOriginatorKeyFile>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
   </PropertyGroup>
 </Project>

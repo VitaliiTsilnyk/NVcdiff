@@ -20,11 +20,8 @@
 *.sln.proj
 
 
-###### Custom NAnt configuration
-/build.conf
-
-
-###### Other files
+###### Local files
+/global.json
 NVcdiff.snk
 
 

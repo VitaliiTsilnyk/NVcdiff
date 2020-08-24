@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NVcdiff", "NVcdiff\NVcdiff.csproj", "{9A56C3B1-8929-4A3B-A54D-FDAF1134EDD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NVcdiff", "src\NVcdiff\NVcdiff.csproj", "{9A56C3B1-8929-4A3B-A54D-FDAF1134EDD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
