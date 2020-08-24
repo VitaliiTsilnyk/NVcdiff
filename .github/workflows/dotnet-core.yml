@@ -18,6 +18,6 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Install dependencies
-      run: dotnet restore src/NVcdiff.sln
+      run: dotnet restore
     - name: Build
-      run: dotnet build src/NVcdiff.sln --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore
